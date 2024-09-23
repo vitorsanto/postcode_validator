@@ -1,7 +1,7 @@
 # Postcode Validator
 This is a Python library designed for validating postcodes, with a focus on UK postcodes. However, it can be easily extended to support other types of postcodes.
 
-The library provides a factory class that builds the appropriate postcode validator based on the given postcode type (e.g., UK). It also offers a simple memory cache mechanism that can be passed as a parameter to the factory class. The cache, which must be a set, is used to check if a postcode is already present. If it is, the postcode is automatically validated.
+The library provides a factory class that builds the appropriate postcode validator based on the given postcode type (e.g., UK). It also offers a simple memory cache mechanism that can be passed as a parameter to the factory class. The cache, which must be a python [`set`](https://docs.python.org/3/tutorial/datastructures.html#sets), is used to check if a postcode is already present. If it is, the postcode is automatically validated.
 
 The validation service will always return a dict with the following keys:
 
